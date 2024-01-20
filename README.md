@@ -56,12 +56,18 @@ This open-source project focuses on cancer detection using a cutting-edge archit
 
 ## Acknowledgments 🙏
 
-   We would like to express our gratitude to the contributors and users who have supported and contributed to the development of this project.
+We would like to express our gratitude to the contributors and users who have supported and contributed to the development of this project.
+
+1. Veekshith Rao Poleni - pveekshithrao@gmail.com
+2. Tanisha Pande - crafttanu424@gmail.com
+3. Jimit Mihir Nahar - jimit.nahar@gmail.com
+4. K. Pranav - pocret@gmail.com
+5. Sai Sanjana Wuyyuru - sanjanawuyyuru27@gmail.com
 
 ## Contact 📧
 For any inquiries or assistance, please contact the project maintainer at 
 1. 🧑‍💻[Maintainer1]: pveekshithrao@gmail.com
-2. 🧑‍💻[Maintainer2]: procret@gmail.com
+2. 🧑‍💻[Maintainer2]: pocret@gmail.com
 
 
       
