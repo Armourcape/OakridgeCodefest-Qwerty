@@ -5,8 +5,7 @@ import threading
 import os
 from ultralytics import YOLO
 
-p_int=3
-n_int=36
+i=1
 class ToolTip:
     def __init__(self, widget, text):
         self.widget = widget
@@ -73,8 +72,11 @@ class ThreeCardsUI:
         self.right_top_card = ttk.Frame(master, style="Card.TFrame")
         self.right_top_card.grid(row=0, column=1, sticky="nsew", padx=20, pady=20)
 
+        self.right_middle_card = ttk.Frame(master, style="Card.TFrame")
+        self.right_middle_card.grid(row=1, column=1, sticky="nsew", padx=20, pady=20)
+
         self.right_bottom_card = ttk.Frame(master, style="Card.TFrame")
-        self.right_bottom_card.grid(row=1, column=1, sticky="nsew", padx=20, pady=20)
+        self.right_bottom_card.grid(row=2, column=1, sticky="nsew", padx=20, pady=20)
 
         master.grid_rowconfigure(0, weight=1)
         master.grid_rowconfigure(1, weight=1)
@@ -108,6 +110,9 @@ class ThreeCardsUI:
         right_top_card_label = tk.Label(self.right_top_card, text="Right Top Card", font=("Helvetica", 16, "bold"), bg="#ecf0f1", fg="#2c3e50")
         right_top_card_label.pack()
 
+        right_middle_card_label = tk.Label(self.right_middle_card, text="Right middle Card", font=("Helvetica", 16, "bold"), bg="#ecf0f1", fg="#2c3e50")
+        right_middle_card_label.pack()
+
         right_bottom_card_label = tk.Label(self.right_bottom_card, text="Right Bottom Card", font=("Helvetica", 16, "bold"), bg="#ecf0f1", fg="#2c3e50")
         right_bottom_card_label.pack()
 
@@ -123,20 +128,22 @@ class ThreeCardsUI:
         if file_path:
             file_name = file_path.split("/")[-1]
             self.loading_label.pack(pady=10)
-            threading.Thread(target=self.process_file, args=(file_path, file_name)).start()
+            global i
+            i=i+1
+            threading.Thread(target=self.process_file, args=(file_path, file_name, i)).start()
 
-    def process_file(self, file_path, file_name):
+    def process_file(self, file_path, file_name, i):
         import time
         time.sleep(0.5)
         model = YOLO('runs/segment/train/weights/best.pt')
-        model.predict(file_path, show_conf=False, save=True, imgsz=640)
+        model.predict(file_path, show_conf=False, save=True, imgsz=640, project="predictions", name="runtime", conf=0.7)
         
-        path = f"runs/segment/predict{str(p_int)}/1-{n_int}.jpg"
-        self.image_label.load_image(path)
+        #path = f"runs/segment/predict{str(p_int)}/1-{n_int}.jpg"
+        #self.image_label.load_image(path)
+        self.image_label.load_image(f"predictions/runtime{str(i)}/{file_name}")
         messagebox.showinfo("File Selected", f"Selected File: {file_name}")
         self.left_card_label.config(text=f"Selected File: {file_name}")
         self.loading_label.pack_forget()
-
 def main():
     root = tk.Tk()
     root.withdraw()
