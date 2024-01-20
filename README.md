@@ -5,6 +5,7 @@
 ## Overview
 
 This open-source project focuses on cancer detection using a cutting-edge architecture which harnesses the most of the current state of advanced segmentation to reduce disparities in the skill of doctors to detect cancer. The Q-Net (self-proclaimed) architecture has shown great promise in image segmentation tasks, making it a suitable choice for cancer detection in medical images.
+
 ![image](https://github.com/Armourcape/OakridgeCodefest-Qwerty/assets/90896462/036e4ed8-87ed-4c73-8efd-aead92b6669d)
 
 ## Current Status
@@ -35,6 +36,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 3.
   ```bash
   python ui_v2.py
+  
 4.** 🔍 Exploring the Interface:**
   Open the graphical interface and explore the functionalities for cancer detection.
 
