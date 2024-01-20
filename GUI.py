@@ -2,7 +2,11 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from PIL import Image, ImageTk
 import threading
+import os
+from ultralytics import YOLO
 
+p_int=3
+n_int=36
 class ToolTip:
     def __init__(self, widget, text):
         self.widget = widget
@@ -90,7 +94,7 @@ class ThreeCardsUI:
         self.left_card_label = tk.Label(self.left_card, text="Left Big Card", font=("Helvetica", 18, "bold"), bg="#ecf0f1", fg="#2c3e50")
         self.left_card_label.pack(pady=20)
 
-        self.loading_label = tk.Label(self.left_card, text="Loading...", font=("Helvetica", 12), bg="#ecf0f1", fg="#3498db")
+        self.loading_label = tk.Label(self.left_card, text="Loading...", font=("Helvetica", 12), bg="#ecf0f1", fg="#2c3e50")
 
         drop_file_btn = ttk.Button(self.left_card, text="Drop File", command=self.upload_file)
         drop_file_btn.pack(pady=(60, 10))
@@ -123,10 +127,12 @@ class ThreeCardsUI:
 
     def process_file(self, file_path, file_name):
         import time
-        time.sleep(2)
-
-        self.image_label.load_image(file_path)
-
+        time.sleep(0.5)
+        model = YOLO('runs/segment/train/weights/best.pt')
+        model.predict(file_path, show_conf=False, save=True, imgsz=640)
+        
+        path = f"runs/segment/predict{str(p_int)}/1-{n_int}.jpg"
+        self.image_label.load_image(path)
         messagebox.showinfo("File Selected", f"Selected File: {file_name}")
         self.left_card_label.config(text=f"Selected File: {file_name}")
         self.loading_label.pack_forget()
