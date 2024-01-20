@@ -36,7 +36,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 3.
   ```bash
      python ui_v2.py
-  
+
+
 4.** 🔍 Exploring the Interface:**
   Open the graphical interface and explore the functionalities for cancer detection.
 
