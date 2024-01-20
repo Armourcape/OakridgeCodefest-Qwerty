@@ -25,17 +25,17 @@ This open-source project focuses on cancer detection using a cutting-edge archit
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The MIT License is a permissive open-source license that allows you to use, modify, and distribute the code for both commercial and non-commercial purposes.
 
 ## Getting Started 🚀
-
+   
 1. **Clone the Repository:**
    ```bash
-  git clone https://github.com/yourusername/cancer-detection-project.git
+   git clone https://github.com/yourusername/cancer-detection-project.git
 2.
    ```bash
-  cd cancer-detection-project
-  pip install -r requirements.txt
+   cd cancer-detection-project
+   pip install -r requirements.txt
 3.
-  ```bash
-  python ui_v2.py
+   ```bash
+   python ui_v2.py
 
 
 4.** 🔍 Exploring the Interface:**
