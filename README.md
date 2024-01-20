@@ -31,11 +31,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
    git clone https://github.com/yourusername/cancer-detection-project.git
 2.
    ```bash
-  cd cancer-detection-project
-  pip install -r requirements.txt
+     cd cancer-detection-project
+     pip install -r requirements.txt
 3.
   ```bash
-  python ui_v2.py
+     python ui_v2.py
   
 4.** 🔍 Exploring the Interface:**
   Open the graphical interface and explore the functionalities for cancer detection.
