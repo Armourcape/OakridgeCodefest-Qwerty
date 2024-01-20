@@ -22,7 +22,7 @@ This open-source project focuses on cancer detection using a cutting-edge archit
 
 ## License 📜
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The MIT License is a permissive open-source license that allows you to use, modify, and distribute the code for both commercial and non-commercial purposes.
+   This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The MIT License is a permissive open-source license that allows you to use, modify, and distribute the code for both commercial and non-commercial purposes.
 
 ## Getting Started 🚀
    
@@ -44,19 +44,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Documentation 📖
 
-The documentary for this project is still under construction by our contributors, please wait patiently.
+   The documentary for this project is still under construction by our contributors, please wait patiently.
 
 ## Contributing 🤝
 
-We welcome contributions to enhance the capabilities and features of this cancer detection project. If you'd like to contribute, please follow the guidelines that are outlined in CONTRIBUTING.md., which will be released shortly
+   We welcome contributions to enhance the capabilities and features of this cancer detection project. If you'd like to contribute, please follow the guidelines that are outlined in CONTRIBUTING.md., which will be released shortly
 
 ## Issues 🐛
 
-If you encounter any issues or have suggestions, please feel free to open an issue on the GitHub Issues page.
+   If you encounter any issues or have suggestions, please feel free to open an issue on the GitHub Issues page.
 
 ## Acknowledgments 🙏
 
-We would like to express our gratitude to the contributors and users who have supported and contributed to the development of this project.
+   We would like to express our gratitude to the contributors and users who have supported and contributed to the development of this project.
 
 ## Contact 📧
 For any inquiries or assistance, please contact the project maintainer at 
