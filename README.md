@@ -39,6 +39,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 4.**🔍 Exploring the Interface:**
+  
   Open the graphical interface and explore the functionalities for cancer detection.
 
 ## Documentation 📖
