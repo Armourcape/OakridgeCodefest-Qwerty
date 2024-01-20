@@ -28,7 +28,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/cancer-detection-project.git
+      git clone https://github.com/yourusername/cancer-detection-project.git
 2.
    ```bash
      cd cancer-detection-project
